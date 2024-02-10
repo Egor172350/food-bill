@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header lock-padding">
+            <div class="header__wrapper">
+                <div class="container">
+                    <div class="header__body">
+                        <a class="header__logo-link" href="#">
+                            <picture><source srcset="img/header/logo.webp" type="image/webp"><img class="header__logo-img" src="img/header/logo.png" alt="Logo"></picture>
+                        </a>
+                        <div class="header__menu">
+                            <div class="header__menu-body">
+                                <nav class="header__menu-nav">
+                                    <ul class="header__menu-items">
+                                        <li class="header__menu-item">
+                                            <a class="header__menu-link" href="#home">Home</a>
+                                        </li>
+                                        <li class="header__menu-item">
+                                            <a class="header__menu-link" href="#diet">How to work</a>
+                                        </li>
+                                        <li class="header__menu-item">
+                                            <a class="header__menu-link" href="#favorite">Services</a>
+                                        </li>
+                                        <li class="header__menu-item">
+                                            <a class="header__menu-link" href="#product">Product</a>
+                                        </li>
+                                        <li class="header__menu-item">
+                                            <a class="header__menu-link" href="#client">Contact</a>
+                                        </li>
+                                        <li class="header__menu-item headr__menu-btn">
+                                            <a class="header__menu-btn popup-link" href="#register-popup">register</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="cart__link">
+                                <svg class="cart__img"
+                                    style="width: 25px;height: 25px;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                                    viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M324.375273 622.964364h508.276363l115.525819-382.324364H235.985455z"
+                                        fill="#F16214" />
+                                    <path
+                                        d="M591.127273 73.774545a40.494545 40.494545 0 0 0-40.541091 40.494546V202.007273H268.241455L229.934545 35.700364a40.494545 40.494545 0 0 0-39.470545-31.418182H56.738909a40.494545 40.494545 0 0 0 0 81.035636h101.469091l38.353455 166.306909 76.846545 332.753455h-42.775273a107.473455 107.473455 0 0 0-107.426909 107.240727 107.426909 107.426909 0 0 0 107.426909 107.240727h58.181818A128.465455 128.465455 0 0 0 279.272727 847.266909a129.722182 129.722182 0 0 0 259.351273 0c0-17.128727-3.397818-33.419636-9.495273-48.407273h116.363637a128.465455 128.465455 0 0 0-9.495273 48.407273 129.722182 129.722182 0 0 0 259.351273 0 129.722182 129.722182 0 0 0-129.629091-129.489454H230.632727a26.298182 26.298182 0 0 1-26.391272-26.158546c0-14.429091 11.869091-26.205091 26.391272-26.205091h601.925818c4.189091 0 8.098909-0.837818 11.869091-1.954909l1.861819-0.605091a39.563636 39.563636 0 0 0 9.914181-5.166545l1.582546-1.303273a40.308364 40.308364 0 0 0 7.028363-7.214545c0.372364-0.465455 0.791273-0.837818 1.117091-1.349819a40.773818 40.773818 0 0 0 4.840728-9.821091c0.139636-0.512 0.512-0.930909 0.698181-1.442909l115.432728-382.324363a40.587636 40.587636 0 0 0-38.725818-52.224H631.621818V114.315636a40.494545 40.494545 0 0 0-40.494545-40.541091zM457.588364 847.266909c0 26.717091-21.783273 48.453818-48.64 48.453818a48.593455 48.593455 0 0 1-48.64-48.407272 48.64 48.64 0 0 1 97.28 0z m308.130909 48.453818a48.593455 48.593455 0 0 1-48.686546-48.407272 48.64 48.64 0 0 1 97.28 0c0 26.670545-21.783273 48.407273-48.593454 48.407272z m127.860363-612.677818l-91.042909 301.288727H356.584727L286.999273 282.996364h263.586909v86.667636l-14.056727-11.636364a40.541091 40.541091 0 0 0-51.712 62.370909l80.430545 66.746182c0.605091 0.465455 1.210182 0.791273 1.861818 1.256728a34.769455 34.769455 0 0 0 6.516364 3.909818c0.930909 0.465455 1.815273 0.930909 2.792727 1.303272a40.866909 40.866909 0 0 0 4.561455 1.396364l2.606545 0.698182a41.146182 41.146182 0 0 0 15.080727 0c0.930909-0.186182 1.768727-0.465455 2.606546-0.698182a40.866909 40.866909 0 0 0 4.561454-1.396364l2.792728-1.303272a37.329455 37.329455 0 0 0 6.562909-3.909818c0.605091-0.465455 1.256727-0.791273 1.861818-1.256728l80.384-66.746182a40.494545 40.494545 0 0 0-51.712-62.370909l-14.056727 11.636364V283.042909H893.672727z"
+                                        fill="#747171" />
+                                </svg>
+                                <span class="cart__counter">0</span>
+                            </div>
+                                <div class="cart__inner">
+                                    <div class="cart__body">
+                                        <div class="cart__empty">
+                                            <h4>cart is empty</h4>
+                                        </div>
+                                        <ul class="cart__list">
+                   
+                                        </ul>
+                                    </div>
+                                    <div class="cart__bottom">
+                                        <div class="cart__total">total:<span class="cart__total-price">0</span></div>
+                                        <button class="cart__btn cart__btn-buy">buy Now</button>
+                                    </div>
+                                </div>
+                        </div>
+                        <button class="burger">
+                            <picture><source srcset="img/header/spoon.webp" type="image/webp"><img class="burger__img burger__spoon" src="img/header/spoon.png" alt="spoon"></picture>
+                            <picture><source srcset="img/header/knife.webp" type="image/webp"><img class="burger__img burger__knife" src="img/header/knife.png" alt="knife"></picture>
+                            <picture><source srcset="img/header/fork.webp" type="image/webp"><img class="burger__img burger__fork" src="img/header/fork.png" alt="fork"></picture>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="register-popup" class="register-popup popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <span class="popup__close close-popup">
+                <picture><source srcset="img/general/close_popup.webp" type="image/webp"><img src="img/general/close_popup.png" alt="close"></picture>
+            </span>
+            <picture><source srcset="img/general/plate-popup.webp" type="image/webp"><img  class="popup__img" src="img/general/plate-popup.png" alt="plate"></picture>
+            <form class="register-popup__form"  action="#" method="get">
+               <input class="register-popup__input" autocomplete="off" type="text" name="username" value="" placeholder="Enter your username"> 
+               <input class="register-popup__input" autocomplete="off" type="email" name="email" value="" placeholder="Enter your email"> 
+               <input class="register-popup__input" autocomplete="off" type="password" name="password" value="" placeholder="Enter your password"> 
+               <button class="register-popup__btn" type="submit">regidter</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+        </header>
+
+        <main class="main">
+            <section class="home" id="home">
+                <div class="container">
+                    <div class="home__inner">
+                        <picture class="home__background">
+                            <source srcset="img/header/bg_medium.jpg" media="(max-width: 1199px)">
+                            <img class="home__background-large" src="img/header/bg_large.jpg" alt="sushi">
+                        </picture>
+                        <div class="home__top">
+                            <h1 class="home__top-title">You Can Eat Any Tasty Food You Like.</h1>
+                            <p class="home__top-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris.</p>
+                            <a class="home__top-btn btn" href="#">Get Started</a>
+                            <div class="home__top-social">
+                                <a class="home__social-link" href="#">
+                                    <svg class="home__social-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#F16214" fill-opacity="0.15" />
+                                        <path
+                                            d="M21.55 21.475H23.175L23.825 18.875H21.55V17.575C21.55 16.9055 21.55 16.275 22.85 16.275H23.825V14.091C23.6131 14.0631 22.8129 14 21.9679 14C20.2032 14 18.95 15.077 18.95 17.055V18.875H17V21.475H18.95V27H21.55V21.475Z"
+                                            fill="#F16214" />
+                                    </svg>
+                                </a>
+                                <a class="home__social-link" href="#">
+                                    <svg class="home__social-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#F16214" fill-opacity="0.15" />
+                                        <path
+                                            d="M20.5 18.55C19.9828 18.55 19.4868 18.7554 19.1211 19.1211C18.7554 19.4868 18.55 19.9828 18.55 20.5C18.55 21.0172 18.7554 21.5132 19.1211 21.8789C19.4868 22.2446 19.9828 22.45 20.5 22.45C21.0172 22.45 21.5132 22.2446 21.8789 21.8789C22.2446 21.5132 22.45 21.0172 22.45 20.5C22.45 19.9828 22.2446 19.4868 21.8789 19.1211C21.5132 18.7554 21.0172 18.55 20.5 18.55ZM20.5 17.25C21.362 17.25 22.1886 17.5924 22.7981 18.2019C23.4076 18.8114 23.75 19.638 23.75 20.5C23.75 21.362 23.4076 22.1886 22.7981 22.7981C22.1886 23.4076 21.362 23.75 20.5 23.75C19.638 23.75 18.8114 23.4076 18.2019 22.7981C17.5924 22.1886 17.25 21.362 17.25 20.5C17.25 19.638 17.5924 18.8114 18.2019 18.2019C18.8114 17.5924 19.638 17.25 20.5 17.25ZM24.725 17.0875C24.725 17.303 24.6394 17.5097 24.487 17.662C24.3347 17.8144 24.128 17.9 23.9125 17.9C23.697 17.9 23.4903 17.8144 23.338 17.662C23.1856 17.5097 23.1 17.303 23.1 17.0875C23.1 16.872 23.1856 16.6653 23.338 16.513C23.4903 16.3606 23.697 16.275 23.9125 16.275C24.128 16.275 24.3347 16.3606 24.487 16.513C24.6394 16.6653 24.725 16.872 24.725 17.0875ZM20.5 15.3C18.8919 15.3 18.6293 15.3046 17.8812 15.3377C17.3716 15.3618 17.0296 15.43 16.7124 15.5535C16.4303 15.6627 16.2269 15.7933 16.0104 16.0104C15.807 16.207 15.6506 16.447 15.5528 16.7124C15.4293 17.0309 15.3611 17.3722 15.3377 17.8812C15.3039 18.5988 15.3 18.8496 15.3 20.5C15.3 22.1081 15.3046 22.3707 15.3377 23.1188C15.3618 23.6278 15.43 23.9703 15.5528 24.2869C15.6633 24.5696 15.7933 24.7731 16.0092 24.9889C16.2282 25.2073 16.4316 25.3379 16.7111 25.4458C17.0322 25.57 17.3742 25.6389 17.8812 25.6623C18.5988 25.6961 18.8496 25.7 20.5 25.7C22.1081 25.7 22.3707 25.6954 23.1188 25.6623C23.6271 25.6382 23.9697 25.57 24.2869 25.4471C24.5683 25.3373 24.7731 25.2066 24.9889 24.9908C25.2079 24.7718 25.3386 24.5683 25.4465 24.2888C25.57 23.9684 25.6389 23.6258 25.6623 23.1188C25.6961 22.4012 25.7 22.1503 25.7 20.5C25.7 18.8919 25.6954 18.6293 25.6623 17.8812C25.6382 17.3728 25.57 17.0296 25.4465 16.7124C25.3485 16.4473 25.1924 16.2074 24.9895 16.0104C24.7931 15.8069 24.5531 15.6505 24.2875 15.5528C23.969 15.4293 23.6271 15.3611 23.1188 15.3377C22.4012 15.3039 22.1503 15.3 20.5 15.3ZM20.5 14C22.266 14 22.4864 14.0065 23.1793 14.039C23.8715 14.0715 24.3428 14.1801 24.7575 14.3413C25.1865 14.5064 25.5479 14.7299 25.9093 15.0907C26.2398 15.4156 26.4956 15.8087 26.6587 16.2425C26.8193 16.6565 26.9285 17.1284 26.961 17.8207C26.9915 18.5136 27 18.7339 27 20.5C27 22.266 26.9935 22.4864 26.961 23.1793C26.9285 23.8715 26.8193 24.3428 26.6587 24.7575C26.496 25.1916 26.2402 25.5847 25.9093 25.9093C25.5843 26.2397 25.1912 26.4954 24.7575 26.6587C24.3434 26.8193 23.8715 26.9285 23.1793 26.961C22.4864 26.9915 22.266 27 20.5 27C18.7339 27 18.5136 26.9935 17.8207 26.961C17.1284 26.9285 16.6572 26.8193 16.2425 26.6587C15.8085 26.4959 15.4154 26.2401 15.0907 25.9093C14.7601 25.5844 14.5044 25.1914 14.3413 24.7575C14.1801 24.3434 14.0715 23.8715 14.039 23.1793C14.0084 22.4864 14 22.266 14 20.5C14 18.7339 14.0065 18.5136 14.039 17.8207C14.0715 17.1278 14.1801 16.6572 14.3413 16.2425C14.5039 15.8084 14.7597 15.4153 15.0907 15.0907C15.4155 14.76 15.8086 14.5042 16.2425 14.3413C16.6572 14.1801 17.1278 14.0715 17.8207 14.039C18.5136 14.0084 18.7339 14 20.5 14Z"
+                                            fill="#F16214" />
+                                    </svg>
+                                </a>
+                                <a class="home__social-link" href="#">
+                                    <svg class="home__social-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#F16214" fill-opacity="0.15" />
+                                        <path
+                                            d="M27.9882 15.5432C27.3893 15.8081 26.7543 15.9821 26.1041 16.0594C26.7894 15.6495 27.3024 15.0044 27.5473 14.2443C26.9041 14.6271 26.199 14.8953 25.464 15.0404C24.9703 14.5122 24.3159 14.1619 23.6026 14.044C22.8893 13.926 22.157 14.047 21.5195 14.3882C20.8821 14.7294 20.3752 15.2716 20.0777 15.9306C19.7802 16.5895 19.7088 17.3283 19.8745 18.0321C18.5701 17.9667 17.2941 17.6278 16.1292 17.0372C14.9644 16.4467 13.9368 15.6178 13.113 14.6043C12.8215 15.1051 12.6683 15.6744 12.6691 16.2539C12.6691 17.3913 13.248 18.3961 14.128 18.9843C13.6072 18.968 13.0979 18.8273 12.6424 18.5741V18.6149C12.6426 19.3724 12.9047 20.1065 13.3843 20.6928C13.864 21.2791 14.5316 21.6814 15.274 21.8317C14.7905 21.9627 14.2836 21.982 13.7915 21.8881C14.0009 22.5402 14.4089 23.1104 14.9584 23.519C15.5079 23.9276 16.1715 24.1541 16.8561 24.1668C16.1757 24.7012 15.3965 25.0963 14.5633 25.3294C13.73 25.5625 12.859 25.6291 12 25.5253C13.4995 26.4897 15.2451 27.0017 17.0279 27C23.0622 27 26.3621 22.0011 26.3621 17.6658C26.3621 17.5246 26.3582 17.3818 26.3519 17.2422C26.9942 16.778 27.5486 16.2029 27.9889 15.544L27.9882 15.5432Z"
+                                            fill="#F16214" />
+                                    </svg>
+                                </a>
+                                <a class="home__social-link" href="#">
+                                    <svg class="home__social-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#F16214" fill-opacity="0.15" />
+                                        <path
+                                            d="M15.8887 15.4451C15.8885 15.8282 15.7362 16.1955 15.4652 16.4662C15.1942 16.7369 14.8267 16.8889 14.4436 16.8887C14.0606 16.8885 13.6933 16.7362 13.4225 16.4652C13.1518 16.1942 12.9998 15.8267 13 15.4436C13.0002 15.0606 13.1525 14.6933 13.4236 14.4225C13.6946 14.1518 14.062 13.9998 14.4451 14C14.8282 14.0002 15.1955 14.1525 15.4662 14.4236C15.7369 14.6946 15.8889 15.062 15.8887 15.4451ZM15.9321 17.9583H13.0433V27H15.9321V17.9583ZM20.4963 17.9583H17.622V27H20.4674V22.2553C20.4674 19.6121 23.9122 19.3665 23.9122 22.2553V27H26.7648V21.2731C26.7648 16.8172 21.6662 16.9833 20.4674 19.1715L20.4963 17.9583Z"
+                                            fill="#F16214" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="home__bottom">
+                            <div class="home__bottom-box">
+                                <a class="home__bottom-link popup-link" href="#work-popup">
+                                    <img class="home__bottom-img" src="img/header/time.svg" alt="icon">
+                                </a>
+                                <span class="home__bottom-meaning">Today 10:00am - 09:00pm</span>
+                                <span class="home__bottom-discription">Working Time</span>
+                            </div>
+                            <div class="home__bottom-box">
+                                <a class="home__bottom-link popup-link" href="#location-popup">
+                                    <img class="home__bottom-img" src="img/header/place.svg" alt="icon">
+                                </a>
+                                <span class="home__bottom-meaning">Washington, D.C., DC, USA</span>
+                                <span class="home__bottom-discription">Our Location</span>
+                            </div>
+                            <div class="home__bottom-box">
+                                <a class="home__bottom-link popup-link" href="#call-popup">
+                                    <img class="home__bottom-img" src="img/header/phone.svg" alt="icon">
+                                </a>
+                                <span class="home__bottom-meaning">+17602781253</span>
+                                <span class="home__bottom-discription">Call Online</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="work-popup" class="work-popup popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <span class="popup__close close-popup">
+                <picture><source srcset="img/general/close_popup.webp" type="image/webp"><img src="img/general/close_popup.png" alt="close"></picture>
+            </span>
+            <picture><source srcset="img/general/work-popup.webp" type="image/webp"><img  class="popup__img" src="img/general/work-popup.png" alt="plate"></picture>
+            <h4 class="work-popup__title">work time</h4>
+            <ul class="work-popup__items">
+                <li class="work-popup__item">
+                    <span class="work-popup__day">Monday</span>
+                    <span class="work-popup__time">10:00am - 09:00pm</span>
+                </li>
+                <li class="work-popup__item">
+                    <span class="work-popup__day">Tuesday</span>
+                    <span class="work-popup__time">10:00am - 09:00pm</span>
+                </li>
+                <li class="work-popup__item">
+                    <span class="work-popup__day">Wednesday</span>
+                    <span class="work-popup__time">10:00am - 09:00pm</span>
+                </li>
+                <li class="work-popup__item">
+                    <span class="work-popup__day">Thursday</span>
+                    <span class="work-popup__time">10:00am - 09:00pm</span>
+                </li>
+                <li class="work-popup__item">
+                    <span class="work-popup__day">Friday</span>
+                    <span class="work-popup__time">10:00am - 09:00pm</span>
+                </li>
+                <li class="work-popup__item">
+                    <span class="work-popup__day">Saturday</span>
+                    <span class="work-popup__time">10:00am - 07:00pm</span>
+                </li>
+                <li class="work-popup__item">
+                    <span class="work-popup__day">Sunday</span>
+                    <span class="work-popup__time">10:00am - 05:00pm</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+                <div id="location-popup" class="location-popup popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <span class="popup__close close-popup">
+                <picture><source srcset="img/general/close_popup.webp" type="image/webp"><img src="img/general/close_popup.png" alt="close"></picture>
+            </span>
+            <picture><source srcset="img/general/location-popup.webp" type="image/webp"><img  class="popup__img" src="img/general/location-popup.png" alt="plate"></picture>
+             <div class="location-popup">
+                <h4 class="location-popup__title">Our location</h4>
+                <iframe class="location-popup__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6305.263662905483!2d-122.41290470657978!3d37.798667105738495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f18d8c6ea7%3A0x5d7f53fb70a3a903!2zNzI1IEdyZWVuIFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEzMywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1698401080901!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+        </div>
+    </div>
+</div>
+
+                <div id="call-popup" class="call-popup popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <span class="popup__close close-popup">
+                <picture><source srcset="img/general/close_popup.webp" type="image/webp"><img src="img/general/close_popup.png" alt="close"></picture>
+            </span>
+            <picture><source srcset="img/general/call-popup.webp" type="image/webp"><img  class="popup__img" src="img/general/call-popup.png" alt="plate"></picture>
+            <div class="call-popup">
+                <h4 class="call-popup__title">Call us</h4>
+                <a class="call-popup__link" href="tel:+17602781253">
+                    <picture><source srcset="img/general/phone-popup.webp" type="image/webp"><img class="call-popup__img" src="img/general/phone-popup.png" alt="phone"></picture>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            </section>
+
+            <section class="diet" id="diet">
+                <picture class="diet__background">
+                    <source srcset="img/diet/diet-2.png" media="(max-width: 1199px)">
+                    <img class="diet__background-img" src="img/diet/diet-1.png" alt="sushi">
+                </picture>
+                <div class="container">
+                    <div class="diet__inner">
+                        <div class="diet__info">
+                            <span class="diet__info-subtitle subtitle">How to work</span>
+                            <h3 class="diet__info-title title">Food Is An Important Part Of A Balanced Diet.</h3>
+                            <p class="diet__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum.</p>
+                            <a href="#" class="diet__info-btn btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="favorite" id="favorite">
+                <div class="container">
+                    <div class="favorite__inner">
+                        <div class="favorite__info">
+                            <span class="favorite__info-subtitle subtitle">Services</span>
+                            <h3 class="favorite__info-title title">Why Choose Our Favorite Food</h3>
+                        </div>
+                        <div class="favorite__content">
+
+                            <div class="favorite__advantage">
+                                <img class="favorite__advantage-img" src="img/favorite/quality.svg" alt="advantage">
+                                <h4 class="favorite__advantage-title">Qualityfull Food</h4>
+                                <p class="favorite__advantage-text">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born.</p>
+                            </div>
+
+                            <div class="favorite__advantage favorite__advantage-healthy">
+                                <img class="favorite__advantage-img" src="img/favorite/healsy.svg" alt="advantage">
+                                <h4 class="favorite__advantage-title">Healthy Food</h4>
+                                <p class="favorite__advantage-text">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born.</p>
+                            </div>
+
+                            <div class="favorite__advantage">
+                                <img class="favorite__advantage-img" src="img/favorite/quality.svg" alt="advantage">
+                                <h4 class="favorite__advantage-title">Fast Delivery</h4>
+                                <p class="favorite__advantage-text">But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and praising pain was born.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product" id="product">
+                <div class="container">
+                    <div class="product__inner">
+                        <div class="product__info">
+                            <span class="product__info-subtitle subtitle">Product</span>
+                            <h3 class="product__info-title title">Most Popular Items</h3>
+                        </div>
+                        <div class="product__store">
+                            <article class="product__card">
+                                <picture><source srcset="img/product/item-1.webp" type="image/webp"><img class="product__card-img" src="img/product/item-1.jpg" alt="card"></picture>
+                                <div class="product__card-content">
+                                    <div class="product__left-content">
+                                        <h4 class="product__card-title">Gyro Sandwhich</h4>
+                                        <button class="product__card-btn">Add To Card</button>
+                                    </div>
+                                    <div class="product__right-content">
+                                        <div class="product__card-rating">
+                                            <img class="product__rating-img" src="img/product/star.svg" alt="star">
+                                            <span class="product__rating-number">4.7</span>
+                                        </div>
+                                        <span class="product__card-price">350$</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product__card">
+                                <picture><source srcset="img/product/item-2.webp" type="image/webp"><img class="product__card-img" src="img/product/item-2.jpg" alt="card"></picture>
+                                <div class="product__card-content">
+                                    <div class="product__left-content">
+                                        <h4 class="product__card-title">Enchilada</h4>
+                                        <button class="product__card-btn">Add To Card</button>
+                                    </div>
+                                    <div class="product__right-content">
+                                        <div class="product__card-rating">
+                                            <img class="product__rating-img" src="img/product/star.svg" alt="star">
+                                            <span class="product__rating-number">4.7</span>
+                                        </div>
+                                        <span class="product__card-price">390$</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product__card">
+                                <picture><source srcset="img/product/item-3.webp" type="image/webp"><img class="product__card-img" src="img/product/item-3.jpg" alt="card"></picture>
+                                <div class="product__card-content">
+                                    <div class="product__left-content">
+                                        <h4 class="product__card-title">Green Beans</h4>
+                                        <button class="product__card-btn">Add To Card</button>
+                                    </div>
+                                    <div class="product__right-content">
+                                        <div class="product__card-rating">
+                                            <img class="product__rating-img" src="img/product/star.svg" alt="star">
+                                            <span class="product__rating-number">4.9</span>
+                                        </div>
+                                        <span class="product__card-price">230$</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product__card">
+                                <picture><source srcset="img/product/item-4.webp" type="image/webp"><img class="product__card-img" src="img/product/item-4.jpg" alt="card"></picture>
+                                <div class="product__card-content">
+                                    <div class="product__left-content">
+                                        <h4 class="product__card-title">Pizza</h4>
+                                        <button class="product__card-btn">Add To Card</button>
+                                    </div>
+                                    <div class="product__right-content">
+                                        <div class="product__card-rating">
+                                            <img class="product__rating-img" src="img/product/star.svg" alt="star">
+                                            <span class="product__rating-number">4.9</span>
+                                        </div>
+                                        <span class="product__card-price">150$</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product__card">
+                                <picture><source srcset="img/product/item-5.webp" type="image/webp"><img class="product__card-img" src="img/product/item-5.jpg" alt="card"></picture>
+                                <div class="product__card-content">
+                                    <div class="product__left-content">
+                                        <h4 class="product__card-title">Chicken Pot Pie</h4>
+                                        <button class="product__card-btn">Add To Card</button>
+                                    </div>
+                                    <div class="product__right-content">
+                                        <div class="product__card-rating">
+                                            <img class="product__rating-img" src="img/product/star.svg" alt="star">
+                                            <span class="product__rating-number">4.7</span>
+                                        </div>
+                                        <span class="product__card-price">260$</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product__card">
+                                <picture><source srcset="img/product/item-6.webp" type="image/webp"><img class="product__card-img" src="img/product/item-6.jpg" alt="card"></picture>
+                                <div class="product__card-content">
+                                    <div class="product__left-content">
+                                        <h4 class="product__card-title">Green Salad</h4>
+                                        <button class="product__card-btn">Add To Card</button>
+                                    </div>
+                                    <div class="product__right-content">
+                                        <div class="product__card-rating">
+                                            <img class="product__rating-img" src="img/product/star.svg" alt="star">
+                                            <span class="product__rating-number">4.9</span>
+                                        </div>
+                                        <span class="product__card-price">100$</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="product__bottom">
+                            <a class="product__btn btn" href="#">See More Product</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="order">
+                <div class="container">
+                    <div class="order__inner">
+                        <div class="order__box" style="background-image: url('img/order/bg-order.jpg');">
+                            <div class="order__box-info">
+                                <h3 class="order__box-title title">Simple Way To Order Your Foods</h3>
+                                <a class="order__box-link" href="#">
+                                    <picture><source srcset="img/order/google-play.webp" type="image/webp"><img class="order__box-link-img" src="img/order/google-play.jpg" alt="Google play"></picture>
+                                </a>
+                                <a class="order__box-link" href="#">
+                                    <picture><source srcset="img/order/apple-store.webp" type="image/webp"><img class="order__box-link-img" src="img/order/apple-store.jpg" alt="Apple store"></picture>
+                                </a>
+                            </div>
+                            <picture><source srcset="img/order/mine-page.webp" type="image/webp"><img class="order__box-img order__box-img-one" src="img/order/mine-page.png" alt="order"></picture>
+                            <img class="order__box-img order__box-img-two" src="img/order/food-details.png"
+                                alt="order">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="client" id="client">
+                <picture class="client__background">
+                    <source srcset="img/client/bg-client-2.png" media="(max-width: 1199px)">
+                    <img class="client__background-img" src="img/client/bg-client-1.png" alt="sushi">
+                </picture>
+                <div class="container">
+                    <div class="client__inner">
+                        <div class="client__info">
+                            <span class="client__info-subtitle subtitle">Testimonials</span>
+                            <h3 class="client__info-title title">Our Happy Client Says</h3>
+                        </div>
+                        <div class="client__content">
+                            <div class="client__slider-container">
+                                <div class="client__slider swiper swiper-no-swiping">
+                                    <div class="client__slider-wrapper swiper-wrapper">
+                                        <div class="client__slider-slide swiper-slide">
+                                            <div class="client__slider-content">
+                                                <div class="client__slider-top">
+                                                    <img class="client__slider-favicon" src="img/client/foto.jpg"
+                                                        alt="Favicon">
+                                                    <div class="client__slider-description">
+                                                        <span class="client__slider-name">Williams Johon</span>
+                                                        <span class="client__slider-profession">CEO & Co-Founder</span>
+                                                    </div>
+                                                </div>
+                                                <div class="client__slider-bottom">
+                                                    <p class="client__slider-text">"Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo
+                                                        consequat. Duis aute irure dolor."
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="client__slider-slide swiper-slide">
+                                            <div class="client__slider-content">
+                                                <div class="client__slider-top">
+                                                    <img class="client__slider-favicon" src="img/client/foto.jpg"
+                                                        alt="Favicon">
+                                                    <div class="client__slider-description">
+                                                        <span class="client__slider-name">Williams Johon</span>
+                                                        <span class="client__slider-profession">CEO & Co-Founder</span>
+                                                    </div>
+                                                </div>
+                                                <div class="client__slider-bottom">
+                                                    <p class="client__slider-text">"Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo
+                                                        consequat. Duis aute irure dolor."
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="client__slider-slide swiper-slide">
+                                            <div class="client__slider-content">
+                                                <div class="client__slider-top">
+                                                    <img class="client__slider-favicon" src="img/client/foto.jpg"
+                                                        alt="Favicon">
+                                                    <div class="client__slider-description">
+                                                        <span class="client__slider-name">Williams Johon</span>
+                                                        <span class="client__slider-profession">CEO & Co-Founder</span>
+                                                    </div>
+                                                </div>
+                                                <div class="client__slider-bottom">
+                                                    <p class="client__slider-text">"Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo
+                                                        consequat. Duis aute irure dolor.""Lorem ipsum dolor sit amet,
+                                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo
+                                                        consequat. Duis aute irure dolor."
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client__slider-navigation">
+                                    <button class=" swiper-button-prev">
+                                        <svg width="23" height="11" viewBox="0 0 23 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.5 10.0158C17.3684 10.0166 17.2379 9.99133 17.1161 9.94157C16.9943 9.89181 16.8834 9.81848 16.79 9.7258C16.6963 9.63283 16.6219 9.52223 16.5711 9.40038C16.5203 9.27852 16.4942 9.14781 16.4942 9.0158C16.4942 8.88379 16.5203 8.75308 16.5711 8.63122C16.6219 8.50936 16.6963 8.39876 16.79 8.3058L20.1 5.0158L16.92 1.7058C16.7337 1.51844 16.6292 1.26498 16.6292 1.0008C16.6292 0.736612 16.7337 0.483161 16.92 0.295798C17.013 0.20207 17.1236 0.127675 17.2454 0.0769067C17.3673 0.026138 17.498 0 17.63 0C17.762 0 17.8927 0.026138 18.0146 0.0769067C18.1364 0.127675 18.247 0.20207 18.34 0.295798L22.2 4.2958C22.3832 4.48273 22.4859 4.73405 22.4859 4.9958C22.4859 5.25755 22.3832 5.50887 22.2 5.6958L18.2 9.6958C18.1102 9.79273 18.0022 9.87092 17.882 9.92584C17.7619 9.98077 17.632 10.0113 17.5 10.0158Z"
+                                                fill="#F16214" />
+                                            <line x1="20" y1="5.01562" x2="1" y2="5.01562" stroke="#F16214"
+                                                stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="swiper-button-next">
+                                        <svg width="23" height="11" viewBox="0 0 23 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.5 10.0158C17.3684 10.0166 17.2379 9.99133 17.1161 9.94157C16.9943 9.89181 16.8834 9.81848 16.79 9.7258C16.6963 9.63283 16.6219 9.52223 16.5711 9.40038C16.5203 9.27852 16.4942 9.14781 16.4942 9.0158C16.4942 8.88379 16.5203 8.75308 16.5711 8.63122C16.6219 8.50936 16.6963 8.39876 16.79 8.3058L20.1 5.0158L16.92 1.7058C16.7337 1.51844 16.6292 1.26498 16.6292 1.0008C16.6292 0.736612 16.7337 0.483161 16.92 0.295798C17.013 0.20207 17.1236 0.127675 17.2454 0.0769067C17.3673 0.026138 17.498 0 17.63 0C17.762 0 17.8927 0.026138 18.0146 0.0769067C18.1364 0.127675 18.247 0.20207 18.34 0.295798L22.2 4.2958C22.3832 4.48273 22.4859 4.73405 22.4859 4.9958C22.4859 5.25755 22.3832 5.50887 22.2 5.6958L18.2 9.6958C18.1102 9.79273 18.0022 9.87092 17.882 9.92584C17.7619 9.98077 17.632 10.0113 17.5 10.0158Z"
+                                                fill="#F16214" />
+                                            <line x1="20" y1="5.01562" x2="1" y2="5.01562" stroke="#F16214"
+                                                stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="client__plate">
+                                <picture><source srcset="img/client/plate.webp" type="image/webp"><img class="client__plate-img" src="img/client/plate.png" alt="image"></picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subcribe">
+                <div class="container">
+                    <div class="subcribe__inner" style="background-image: url('img/subcribe/bg-subcribe.png');">
+                        <div class="subcribe__info">
+                            <h3 class="subcribe__info-title title">Subcribe To Our Newsletter</h3>
+                            <p class="subcribe__info-text">Email subsription is an opportunity to recevie an interting
+                                newsletter
+                                from a website. once a user fills in the subscription from on a website.
+                            </p>
+                            <form class="subcribe__info-form" action="#">
+                                <input class="subcribe__form-input" autocomplete="off" type="email" name="email"
+                                    placeholder="Type your email...">
+                                <button class="subcribe__form-btn" type="submit">SUBCRIBE</button>
+                            </form>
+                        </div>
+                        <div class="subcribe__image">
+                            <picture><source srcset="img/subcribe/burger.webp" type="image/webp"><img class="subcribe__image-img" src="img/subcribe/burger.png" alt="burger"></picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__list">
+                        <a href="#" class="footer__logo">
+                            <picture><source srcset="img/footer/logo.webp" type="image/webp"><img class="footer__logo-img" src="img/footer/logo.png" alt="logo"></picture>
+                        </a>
+                        <p class="footer__main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.</p>
+                        <div class="footer__social-links">
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer__social-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="#F16214" fill-opacity="0.15" />
+                                    <path
+                                        d="M21.55 21.475H23.175L23.825 18.875H21.55V17.575C21.55 16.9055 21.55 16.275 22.85 16.275H23.825V14.091C23.6131 14.0631 22.8129 14 21.9679 14C20.2032 14 18.95 15.077 18.95 17.055V18.875H17V21.475H18.95V27H21.55V21.475Z"
+                                        fill="#F16214" />
+                                </svg>
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer__social-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="#F16214" fill-opacity="0.15" />
+                                    <path
+                                        d="M20.5 18.55C19.9828 18.55 19.4868 18.7554 19.1211 19.1211C18.7554 19.4868 18.55 19.9828 18.55 20.5C18.55 21.0172 18.7554 21.5132 19.1211 21.8789C19.4868 22.2446 19.9828 22.45 20.5 22.45C21.0172 22.45 21.5132 22.2446 21.8789 21.8789C22.2446 21.5132 22.45 21.0172 22.45 20.5C22.45 19.9828 22.2446 19.4868 21.8789 19.1211C21.5132 18.7554 21.0172 18.55 20.5 18.55ZM20.5 17.25C21.362 17.25 22.1886 17.5924 22.7981 18.2019C23.4076 18.8114 23.75 19.638 23.75 20.5C23.75 21.362 23.4076 22.1886 22.7981 22.7981C22.1886 23.4076 21.362 23.75 20.5 23.75C19.638 23.75 18.8114 23.4076 18.2019 22.7981C17.5924 22.1886 17.25 21.362 17.25 20.5C17.25 19.638 17.5924 18.8114 18.2019 18.2019C18.8114 17.5924 19.638 17.25 20.5 17.25ZM24.725 17.0875C24.725 17.303 24.6394 17.5097 24.487 17.662C24.3347 17.8144 24.128 17.9 23.9125 17.9C23.697 17.9 23.4903 17.8144 23.338 17.662C23.1856 17.5097 23.1 17.303 23.1 17.0875C23.1 16.872 23.1856 16.6653 23.338 16.513C23.4903 16.3606 23.697 16.275 23.9125 16.275C24.128 16.275 24.3347 16.3606 24.487 16.513C24.6394 16.6653 24.725 16.872 24.725 17.0875ZM20.5 15.3C18.8919 15.3 18.6293 15.3046 17.8812 15.3377C17.3716 15.3618 17.0296 15.43 16.7124 15.5535C16.4303 15.6627 16.2269 15.7933 16.0104 16.0104C15.807 16.207 15.6506 16.447 15.5528 16.7124C15.4293 17.0309 15.3611 17.3722 15.3377 17.8812C15.3039 18.5988 15.3 18.8496 15.3 20.5C15.3 22.1081 15.3046 22.3707 15.3377 23.1188C15.3618 23.6278 15.43 23.9703 15.5528 24.2869C15.6633 24.5696 15.7933 24.7731 16.0092 24.9889C16.2282 25.2073 16.4316 25.3379 16.7111 25.4458C17.0322 25.57 17.3742 25.6389 17.8812 25.6623C18.5988 25.6961 18.8496 25.7 20.5 25.7C22.1081 25.7 22.3707 25.6954 23.1188 25.6623C23.6271 25.6382 23.9697 25.57 24.2869 25.4471C24.5683 25.3373 24.7731 25.2066 24.9889 24.9908C25.2079 24.7718 25.3386 24.5683 25.4465 24.2888C25.57 23.9684 25.6389 23.6258 25.6623 23.1188C25.6961 22.4012 25.7 22.1503 25.7 20.5C25.7 18.8919 25.6954 18.6293 25.6623 17.8812C25.6382 17.3728 25.57 17.0296 25.4465 16.7124C25.3485 16.4473 25.1924 16.2074 24.9895 16.0104C24.7931 15.8069 24.5531 15.6505 24.2875 15.5528C23.969 15.4293 23.6271 15.3611 23.1188 15.3377C22.4012 15.3039 22.1503 15.3 20.5 15.3ZM20.5 14C22.266 14 22.4864 14.0065 23.1793 14.039C23.8715 14.0715 24.3428 14.1801 24.7575 14.3413C25.1865 14.5064 25.5479 14.7299 25.9093 15.0907C26.2398 15.4156 26.4956 15.8087 26.6587 16.2425C26.8193 16.6565 26.9285 17.1284 26.961 17.8207C26.9915 18.5136 27 18.7339 27 20.5C27 22.266 26.9935 22.4864 26.961 23.1793C26.9285 23.8715 26.8193 24.3428 26.6587 24.7575C26.496 25.1916 26.2402 25.5847 25.9093 25.9093C25.5843 26.2397 25.1912 26.4954 24.7575 26.6587C24.3434 26.8193 23.8715 26.9285 23.1793 26.961C22.4864 26.9915 22.266 27 20.5 27C18.7339 27 18.5136 26.9935 17.8207 26.961C17.1284 26.9285 16.6572 26.8193 16.2425 26.6587C15.8085 26.4959 15.4154 26.2401 15.0907 25.9093C14.7601 25.5844 14.5044 25.1914 14.3413 24.7575C14.1801 24.3434 14.0715 23.8715 14.039 23.1793C14.0084 22.4864 14 22.266 14 20.5C14 18.7339 14.0065 18.5136 14.039 17.8207C14.0715 17.1278 14.1801 16.6572 14.3413 16.2425C14.5039 15.8084 14.7597 15.4153 15.0907 15.0907C15.4155 14.76 15.8086 14.5042 16.2425 14.3413C16.6572 14.1801 17.1278 14.0715 17.8207 14.039C18.5136 14.0084 18.7339 14 20.5 14Z"
+                                        fill="#F16214" />
+                                </svg>
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer__social-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="#F16214" fill-opacity="0.15" />
+                                    <path
+                                        d="M27.9882 15.5432C27.3893 15.8081 26.7543 15.9821 26.1041 16.0594C26.7894 15.6495 27.3024 15.0044 27.5473 14.2443C26.9041 14.6271 26.199 14.8953 25.464 15.0404C24.9703 14.5122 24.3159 14.1619 23.6026 14.044C22.8893 13.926 22.157 14.047 21.5195 14.3882C20.8821 14.7294 20.3752 15.2716 20.0777 15.9306C19.7802 16.5895 19.7088 17.3283 19.8745 18.0321C18.5701 17.9667 17.2941 17.6278 16.1292 17.0372C14.9644 16.4467 13.9368 15.6178 13.113 14.6043C12.8215 15.1051 12.6683 15.6744 12.6691 16.2539C12.6691 17.3913 13.248 18.3961 14.128 18.9843C13.6072 18.968 13.0979 18.8273 12.6424 18.5741V18.6149C12.6426 19.3724 12.9047 20.1065 13.3843 20.6928C13.864 21.2791 14.5316 21.6814 15.274 21.8317C14.7905 21.9627 14.2836 21.982 13.7915 21.8881C14.0009 22.5402 14.4089 23.1104 14.9584 23.519C15.5079 23.9276 16.1715 24.1541 16.8561 24.1668C16.1757 24.7012 15.3965 25.0963 14.5633 25.3294C13.73 25.5625 12.859 25.6291 12 25.5253C13.4995 26.4897 15.2451 27.0017 17.0279 27C23.0622 27 26.3621 22.0011 26.3621 17.6658C26.3621 17.5246 26.3582 17.3818 26.3519 17.2422C26.9942 16.778 27.5486 16.2029 27.9889 15.544L27.9882 15.5432Z"
+                                        fill="#F16214" />
+                                </svg>
+                            </a>
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer__social-img" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="#F16214" fill-opacity="0.15" />
+                                    <path
+                                        d="M15.8887 15.4451C15.8885 15.8282 15.7362 16.1955 15.4652 16.4662C15.1942 16.7369 14.8267 16.8889 14.4436 16.8887C14.0606 16.8885 13.6933 16.7362 13.4225 16.4652C13.1518 16.1942 12.9998 15.8267 13 15.4436C13.0002 15.0606 13.1525 14.6933 13.4236 14.4225C13.6946 14.1518 14.062 13.9998 14.4451 14C14.8282 14.0002 15.1955 14.1525 15.4662 14.4236C15.7369 14.6946 15.8889 15.062 15.8887 15.4451ZM15.9321 17.9583H13.0433V27H15.9321V17.9583ZM20.4963 17.9583H17.622V27H20.4674V22.2553C20.4674 19.6121 23.9122 19.3665 23.9122 22.2553V27H26.7648V21.2731C26.7648 16.8172 21.6662 16.9833 20.4674 19.1715L20.4963 17.9583Z"
+                                        fill="#F16214" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__list">
+                        <h4 class="footer__list-title">Opening Restaurant</h4>
+                        <ul class="footer__list-items">
+                            <li class="footer__list-item">
+                                <span class="footer__list-text">Sa - We: 09:00am - 10:00pm</span>
+                            </li>
+                            <li class="footer__list-item">
+                                <span class="footer__list-text">Thursday: 09:00am - 05:00pm</span>
+                            </li>
+                            <li class="footer__list-item">
+                                <span class="footer__list-text">Friday: Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h4 class="footer__list-title">User Link</h4>
+                        <ul class="footer__list-items">
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">About Us</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Order Delivery</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Payment & Tax</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Terms of Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__list">
+                        <h4 class="footer__list-title">Contact Us</h4>
+                        <ul class="footer__list-items">
+                            <li class="footer__list-item">
+                                <span class="footer__list-text">543 Country Club Ave,</span>
+                            </li>
+                            <li class="footer__list-item">
+                                <span class="footer__list-text">NC 27587, London, UK</span>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="tel:+12596541120" class="footer__list-phone">+1259 6541120</a>
+                            </li>
+                        </ul>
+                        <form class="footer__list-form" action="#">
+                            <input class="footer__form-input" autocomplete="off" type="email" name="email"
+                                placeholder="Enter your email...">
+                            <button class="footer__form-btn" type="submit">
+                                <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.33373 5L0 1.66745L1.66627 0L6.66627 5L1.66627 10L0 8.33255L3.33373 5Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <span class="footer__copyright-text"> Copyrights© 2021 Food Bill All rights reserved.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="./js/app.min.js"></script>
+</body>
+
+</html>
